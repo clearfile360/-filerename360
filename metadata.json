@@ -1,0 +1,6 @@
+{
+  "name": "FileMind AI",
+  "description": "AI-powered file organization and intelligent filename suggestion platform analyzing document contents with Gemini multimodal vision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

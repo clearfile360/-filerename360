@@ -1,0 +1,50 @@
+import { NamingTemplate } from "../types";
+
+export const DEFAULT_TEMPLATES: NamingTemplate[] = [
+  {
+    id: "tpl_standard",
+    name: "Standard Smart Professional",
+    description: "Balanced format with Document Type, Entity, Date, and Identifier.",
+    pattern: "{DocType}_{Entity}_{Date}_{Identifier}",
+    separator: "_",
+    caseStyle: "PascalCase",
+    dateFormat: "YYYY-MM-DD",
+    isDefault: true,
+  },
+  {
+    id: "tpl_finance",
+    name: "Accounting & Invoices",
+    description: "Optimized for invoices, receipts, expenses, and tax filing.",
+    pattern: "{Date}_{DocType}_{Entity}_{Identifier}",
+    separator: "_",
+    caseStyle: "PascalCase",
+    dateFormat: "YYYY-MM-DD",
+  },
+  {
+    id: "tpl_legal",
+    name: "Legal, Deeds & Property",
+    description: "Includes location and document titles with clear sectioning.",
+    pattern: "{DocType}_{Location}_{Identifier}_{Date}",
+    separator: "_",
+    caseStyle: "PascalCase",
+    dateFormat: "YYYY",
+  },
+  {
+    id: "tpl_medical",
+    name: "Healthcare & Lab Records",
+    description: "Standard clinical pattern prioritizing Patient/Lab and Test Date.",
+    pattern: "{Entity}_{DocType}_{Identifier}_{Date}",
+    separator: "_",
+    caseStyle: "PascalCase",
+    dateFormat: "YYYY-MM-DD",
+  },
+  {
+    id: "tpl_kebab",
+    name: "Developer & Web (kebab-case)",
+    description: "Lower-case hyphenated format ideal for web assets and servers.",
+    pattern: "{DocType}-{Entity}-{Date}-{Identifier}",
+    separator: "-",
+    caseStyle: "kebab-case",
+    dateFormat: "YYYYMMDD",
+  },
+];
